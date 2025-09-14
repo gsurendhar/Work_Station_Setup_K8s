@@ -73,7 +73,7 @@ Provide:
 1. Define your EKS cluster configuration in `eks_creation.yaml`.
    Example:
 
-   ```  
+```  
    apiVersion: eksctl.io/v1alpha5
    kind: ClusterConfig
 
@@ -92,7 +92,7 @@ Provide:
 
 ```
    eksctl create cluster --config-file=eks_creation.yaml
-   ```
+```
 
 ---
 
@@ -100,9 +100,9 @@ Provide:
 
 * List nodes:
 
-  ``` 
+``` 
   kubectl get nodes
-  ```
+```
 
 ---
 
@@ -110,9 +110,9 @@ Provide:
 
 1. Create resources using a manifest file:
 
-   ``` 
+``` 
    kubectl apply -f manifest.yaml
-   ```
+```
 
 2. List pods:
 
