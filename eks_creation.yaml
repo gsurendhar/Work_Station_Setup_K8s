@@ -6,10 +6,10 @@ metadata:
   region: us-east-1
 
 managedNodeGroups:
-- name: roboshop
-  instanceType: ["m5.large", "c3.large","c4.large", "c5.large"]
-  desiredCapacity: 2
-  spot: true
+  - name: roboshop
+    instanceType: ["m5.large", "c3.large","c4.large", "c5.large"]
+    desiredCapacity: 2
+    spot: true
 
 
 
