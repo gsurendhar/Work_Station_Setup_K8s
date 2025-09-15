@@ -181,3 +181,15 @@ Provide:
 ---
 
 💡 With this setup, you can easily spin up an EKS cluster, deploy workloads, and manage resources using Kubernetes best practices.
+
+
+
+
+
+
+
+
+kubectl exec -it multi-container -c nginx -- bash
+kubectl exec -it multi-container -c almalinux -- bash
+
+
