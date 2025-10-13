@@ -9,7 +9,7 @@ sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 sudo systemctl start docker
 sudo systemctl enable docker
 # sudo systemctl status docker
-usermod -aG docker ec2-user
+sudo usermod -aG docker ec2-user
 
 # eksctl Installation
 ARCH=amd64
