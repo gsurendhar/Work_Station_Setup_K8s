@@ -4,6 +4,9 @@ growpart /dev/nvme0n1 4
 lvextend -L +5G /dev/RootVG/rootVol
 lvextend -L +15G /dev/RootVG/homeVol
 
+sudo xfs_growfs /
+sudo xfs_growfs /home
+
 # Docker Installation
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
