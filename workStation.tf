@@ -3,6 +3,11 @@ resource "aws_instance" "k8s_workstation" {
     instance_type = "t3.micro"
     vpc_security_group_ids = [aws_security_group.allow-all.id]
     user_data = file("bootstrap.sh")
+    
+    root_block_device {
+    volume_size = 40
+    volume_type = "gp3" # or "gp2", depending on your preference
+    }
    
     tags    = {
         Name = "roboshop-dev"
