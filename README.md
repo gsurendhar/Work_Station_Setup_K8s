@@ -193,3 +193,4 @@ kubectl exec -it multi-container -c nginx -- bash
 kubectl exec -it multi-container -c almalinux -- bash
 
 
+eksctl scale nodegroup --cluster=roboshop --name=roboshop --nodes=3 --nodes-min=2 --nodes-max=3
